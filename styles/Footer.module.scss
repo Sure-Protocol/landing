@@ -1,0 +1,31 @@
+@import 'base.scss';
+.footerItems{
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footerItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.footerItemTag {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    &:hover{
+        background: $primary-purple;
+    }
+    
+    
+}
+
+.footerItemImage{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    
+}

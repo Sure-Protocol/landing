@@ -1,0 +1,98 @@
+@import 'base.scss';
+
+@font-face {
+  font-family: 'Trispace-medium';
+  src: url('/Trispace-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Trispace-light';
+  src: url('/Trispace-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Trispace-regular';
+  src: url('/Trispace-Regular.ttf') format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  background:linear-gradient(70deg, $two-darkblue,90%,$two-purple);
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Trispace-medium';
+  background:linear-gradient(90deg, $two-red, $two-purple, $two-red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: 'Trispace-medium';
+  color: $basic-font;
+
+}
+.h2-gradient {
+    background:linear-gradient(90deg, $two-red, $two-purple, $two-red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+h3,h4,h5,h6{
+  font-family: 'Trispace-regular';
+  color: $basic-font;
+}
+
+p,a,li{
+  font-family: 'Trispace-regular';
+  color: $basic-font;
+}
+
+
+.margin-bottom-m {
+  margin-bottom: 12px;
+}
+
+.isActive{
+  color: $primary-green;
+}
+
+.primary-button{
+  padding:10px;
+  background-image: linear-gradient(to right, $two-blue 0%, $two-red  51%, $two-blue  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+ 
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: 'Trispace-medium';
+  color: $basic-font;            
+  border-radius: 10px;
+  border-width: 0px;
+  border-color:#fff;
+  display: block;
+  &:hover{
+    background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer;
+  }
+}
