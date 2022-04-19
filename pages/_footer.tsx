@@ -4,7 +4,7 @@ import Image from "next/image";
 import sureLogo from "../public/sure.svg";
 import twitterLogo from "../public/twitterLogo.svg";
 import discordLogo from "../public/discordLogo.svg";
-import githubLogo from "../public/GithubMark.png";
+import githubLogo from "../public/githubMark.png";
 
 import { css, cx } from "@emotion/css";
 
