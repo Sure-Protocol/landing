@@ -32,13 +32,17 @@ const Home: NextPage = () => {
           `}
         >
           <p className={styles.description}>
-            Sure provides smart contract insurance for everyday users.
+            Sure will make using blockchain technology safer. This is achieved
+            by creating a marketplace for smart contract insurance.
           </p>
           <p className={styles.description}>
-            Yield farming for liquidity providers.
+            Users gets the lowest premiums possible while liquidity providers
+            receive a higher return for the risk taken
           </p>
         </div>
-        <h2 className="h2-gradient">Governance for every token holder</h2>
+        <h2 className="h2-gradient">
+          Long term investors can take part in governance
+        </h2>
       </main>
       <main className={styles.main}>
         <div
@@ -56,19 +60,13 @@ const Home: NextPage = () => {
           `}
         >
           <p className={styles.description}>
-            We encourage well vetted open sourced project but we understand that
-            bugs can sneak in.
+            We understand that exploitable bugs can sneak in
           </p>
           <p className={styles.description}>
-            sure enables true on-chain insurance against smart contract
-            breaches. Through strong incentives users are rewarded for being
-            honest.
-          </p>
-
-          <p className={styles.description}>
-            The native token allows users and liquidity providers to take part
-            in reducing the impact of breaches. Thus lowering the bar for new
-            crypto native users.
+            Sure wants to create a virtuous circle of incentivizing liquidity
+            providers to reduce the risk of the insured protocols. Since
+            premiums are commoditized LPs can increase their reward risk ratio
+            by securing the protcols.
           </p>
         </div>
       </main>
