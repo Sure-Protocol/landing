@@ -19,9 +19,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: $background-color;
+  width:100%; 
+  //background-color: $background-color;
   background:linear-gradient(70deg, $two-darkblue,90%,$two-purple);
-  
+  background-repeat: no-repeat;
+  position:fixed
 }
 
 a {
