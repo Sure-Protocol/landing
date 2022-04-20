@@ -23,7 +23,6 @@ body {
   //background-color: $background-color;
   background:linear-gradient(70deg, $two-darkblue,90%,$two-purple);
   background-repeat: no-repeat;
-  position:fixed
 }
 
 a {
@@ -39,12 +38,16 @@ h1 {
   font-family: 'Trispace-medium';
   background:linear-gradient(90deg, $two-red, $two-purple, $two-red);
   background-clip: text;
+  font-size: 48px;
+  line-height: 64px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h2 {
   font-family: 'Trispace-medium';
+  font-size: 32px;
+  line-height: 64px;
   color: $basic-font;
 
 }
@@ -64,13 +67,12 @@ h3,h4,h5,h6{
 
 p,a,li{
   font-family: 'Trispace-regular';
+  font-size: 24px;
+  line-height: 48px;
   color: $basic-font;
 }
 
 
-.margin-bottom-m {
-  margin-bottom: 12px;
-}
 
 .isActive{
   color: $primary-green;

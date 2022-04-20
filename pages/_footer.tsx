@@ -6,19 +6,12 @@ import twitterLogo from "../public/twitterLogo.svg";
 import discordLogo from "../public/discordLogo.svg";
 import githubLogo from "../public/githubMark.png";
 
-import { css, cx } from "@emotion/css";
+import { css } from "@emotion/css";
 
 const Footer = () => {
   return (
-    <footer
-      className={css`
-        display: flex;
-        justify-content: flex-start;
-        padding-bottom: 4rem;
-        padding-top: 4rem;
-      `}
-    >
-      <div className={styles.footerItems}>
+    <footer className={styles.footerItems}>
+      <div className={styles.footerItem}>
         <Image
           src={sureLogo}
           alt="Picture of the author"
@@ -26,20 +19,11 @@ const Footer = () => {
           height={100}
         />
       </div>
-      <div className={styles.footerItems}>
-        <div
-          className={css`
-            margin-right: 7rem;
-          `}
-        >
+      <div className={styles.footerGroup}>
+        <div className={styles.footerGroupItem}>
           <h2>Social</h2>
-          <ul
-            className={css`
-              list-style: none;
-              padding: 0;
-            `}
-          >
-            <li className={`margin-bottom-m ${styles.footerItem}`}>
+          <ul className={styles.footerGroupItemList}>
+            <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
                 href="https://twitter.com/SureProtocol"
@@ -55,7 +39,7 @@ const Footer = () => {
                 Twitter
               </a>
             </li>
-            <li className="margin-bottom-m">
+            <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
                 href="https://discord.gg/GRaHtPufqn"
@@ -71,7 +55,7 @@ const Footer = () => {
                 Discord
               </a>
             </li>
-            <li className="margin-bottom-m">
+            <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
                 href="https://github.com/Sure-Protocol"
@@ -89,15 +73,10 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={styles.footerGroupItem}>
           <h2>Documents</h2>
-          <ul
-            className={css`
-              list-style: none;
-              padding: 0;
-            `}
-          >
-            <li className="margin-bottom-m">
+          <ul className={styles.footerGroupItemList}>
+            <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
                 href="https://sure-claims.slite.com/p/note/S5iFtyghDI-HohuJVMTXBS"
@@ -105,15 +84,7 @@ const Footer = () => {
                 White Paper
               </a>
             </li>
-          </ul>
-
-          <ul
-            className={css`
-              list-style: none;
-              padding: 0;
-            `}
-          >
-            <li className="margin-bottom-m">
+            <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
                 href="https://medium.com/@sure.protocol"

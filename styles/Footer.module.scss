@@ -1,16 +1,44 @@
 @import 'base.scss';
+
+
 .footerItems{
-    margin-right: 10rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    width:95%;
+    max-width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
-.footerItem {
+.footerItem{
     display: flex;
     align-items: center;
-    justify-content: center;
-   
+    flex: 0.3 0 auto;
+    padding-left: 1rem;
 }
+
+.footerGroup{
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+
+.footerGroupItem{
+   padding: 0 1rem;
+}
+
+.footerGroupItemList{
+    list-style: none;
+    padding:0;
+}
+
+.footerGroupItemListItem{
+    margin-bottom: 10px;
+}
+
 
 .footerItemTag {
     display: flex;
@@ -19,8 +47,6 @@
     &:hover{
         background: $primary-purple;
     }
-    
-    
 }
 
 .footerItemImage{
