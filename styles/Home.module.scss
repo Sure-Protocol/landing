@@ -1,13 +1,25 @@
+@import 'base.scss';
 .main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width:$layout-breakpoint-small ) {
+    padding-top: 7em;
+  }
+  
 
 }
 .container{
   max-width: 80ch;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (max-width:$layout-breakpoint-small ) {
+    padding-bottom: 10rem;
+  }
 }
 
 .page{

@@ -40,8 +40,14 @@ h1 {
   background-clip: text;
   font-size: 48px;
   line-height: 64px;
+  margin:0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: $layout-breakpoint-small){
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h2 {
@@ -49,6 +55,12 @@ h2 {
   font-size: 32px;
   line-height: 64px;
   color: $basic-font;
+
+  @media (max-width: $layout-breakpoint-small){
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+  }
 
 }
 .h2-gradient {
@@ -70,6 +82,11 @@ p,a,li{
   font-size: 24px;
   line-height: 48px;
   color: $basic-font;
+  @media (max-width: $layout-breakpoint-small){
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+  }
 }
 
 
