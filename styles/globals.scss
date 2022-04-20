@@ -84,11 +84,19 @@ p,a,li{
   font-size: 24px;
   line-height: 48px;
   color: $basic-font;
+
+  
   @media (max-width: $layout-breakpoint-small){
     font-size: 20px;
     line-height: 32px;
     text-align: left;
   }
+
+  
+}
+
+.small{
+    font-size: 18px;
 }
 
 
