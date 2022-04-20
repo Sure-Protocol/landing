@@ -4,13 +4,22 @@
     justify-content: space-between;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+}
 .navList{
     list-style: none;
     display: flex;
     align-items: center;
 }
 
+.navButton{
+    display: flex;
+    align-items: center;
+}
+
 .navListItem{
-    //margin-right: 5rem;
     font-size: 24px;
+    margin-right: 1rem;
 }

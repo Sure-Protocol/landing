@@ -37,9 +37,7 @@ const Home: NextPage = () => {
                 providers receive a higher return for the risk taken
               </p>
             </div>
-            <h2 className="h2-gradient">
-              Long term investors can take part in governance
-            </h2>
+            <h2 className="h2-gradient">Anybody can take part in governance</h2>
           </div>
           <div className={styles.container}>
             <div>
@@ -52,7 +50,7 @@ const Home: NextPage = () => {
                 text-align: center;
               `}
             >
-              <p>We understand that exploitable bugs can sneak in</p>
+              <p>We understand that bugs can sneak in</p>
               <p>
                 Sure wants to create a virtuous circle of incentivizing
                 liquidity providers to reduce the risk of the insured protocols.

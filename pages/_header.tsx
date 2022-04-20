@@ -22,22 +22,15 @@ const Header = () => {
           height={150}
         />
       </div>
-      <nav
-        className={css`
-          display: flex;
-          align-items: center;
-        `}
-      >
+      <nav className={styles.navbar}>
         <ul className={styles.navList}>
           <li className={styles.navListItem}>
             <Link href="/">
               <a className={router.asPath === "/" ? "isActive" : ""}>Home</a>
             </Link>
           </li>
-          <li>
-            <button className="primary-button">App</button>
-          </li>
         </ul>
+        <button className="primary-button">App</button>
       </nav>
     </div>
   );
