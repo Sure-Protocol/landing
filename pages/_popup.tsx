@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import styles from "../styles/Popup.module.scss";
 import { PopupContext } from "../context/popup";
+
 const Popup = () => {
   const popup = useContext(PopupContext);
   if (!popup.isOpen) {

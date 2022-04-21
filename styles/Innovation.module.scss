@@ -1,0 +1,41 @@
+@import "base.scss";
+.innovations{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.innovation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom:5rem;
+   
+}
+
+.innovationReversed {
+    @extend .innovation;
+    flex-direction: row-reverse;
+}
+
+.description{
+    max-width: 50%;
+    @media (max-width: $layout-breakpoint-small) {
+        max-width: 100%;
+    }
+}
+
+
+.img{
+    display: flex;
+    align-items: center;
+    &:hover{
+        border-color: $two-blue;
+        border-width: 4px;
+        border-style: solid;
+        border-radius: 23px;
+    }
+}
