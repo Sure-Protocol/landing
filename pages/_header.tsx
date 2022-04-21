@@ -20,12 +20,7 @@ const Header = () => {
             padding-top: 15px;
           `}
         >
-          <Image
-            src={sureLogo}
-            alt="Picture of the author"
-            width={150}
-            height={150}
-          />
+          <Image src={sureLogo} alt="Sure Logo" width={150} height={150} />
         </div>
         <nav className={styles.navbar}>
           <ul className={styles.navList}>

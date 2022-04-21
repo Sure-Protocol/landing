@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <Head>
           <title>Sure Protocol</title>
           <meta name="description" content="Sure protocol" />
-          <link rel="icon" href="/sure.svg" />
+          <link rel="icon" href="/sureShield.svg" />
         </Head>
 
         <PopupContext.Provider value={{ isOpen, toggle }}>
