@@ -1,0 +1,49 @@
+@import "base.scss";
+
+.primaryButton {
+    cursor: pointer;
+    font-family: 'Trispace-medium';
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: $two-lightblue;
+    width:200px;
+    border-style: solid;
+    padding:20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    &:hover{
+        border-color: $two-purple;
+    }
+}
+
+.primaryButtonVerticalMargin{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.secondaryButton{
+    padding:10px;
+    background-image: linear-gradient(to right, $two-blue 0%, $two-red  51%, $two-blue  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+   
+    transition: 0.5s;
+    background-size: 200% auto;
+    font-family: 'Trispace-medium';
+    color: $basic-font;            
+    border-radius: 10px;
+    border-width: 0px;
+    border-color:#fff;
+    display: block;
+    &:hover{
+      background-position: right center;
+       color: #fff;
+       text-decoration: none;
+       cursor: pointer;
+    }
+  }

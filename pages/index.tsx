@@ -1,11 +1,19 @@
 import type { NextPage } from "next";
 import Footer from "./_footer";
-import Header from "./_header";
 import Head from "next/head";
 import Innovation from "./_innovations";
 import styles from "../styles/Home.module.scss";
+import Image from "next/image";
+import SureInLogo from "../public/sureInLogo.svg";
+import TwitterWhite from "../public/TwitterWhite.svg";
+import DiscordWhite from "../public/DiscordWhite.svg";
+import GithubWhite from "../public/GithubWhite.svg";
+
 import { PopupContext } from "../context/popup";
+import PrimaryButton from "./buttons/_PrimaryButton";
+
 import { css } from "@emotion/css";
+
 import { useState } from "react";
 
 const Home: NextPage = () => {
@@ -20,34 +28,72 @@ const Home: NextPage = () => {
         </Head>
 
         <PopupContext.Provider value={{ isOpen, toggle }}>
-          <Header />
           <div className={styles.main}>
             <div className={styles.container}>
+              <div className="icon-vertical-margin-xl">
+                <Image
+                  src={SureInLogo}
+                  alt="Sure in Logo"
+                  width={250}
+                  height={250}
+                />
+              </div>
+
               <div className={styles.statement}>
                 <div>
-                  <h1>Live Carefree</h1>
-                  <h1>Be Sure</h1>
+                  <h1 className="white-font">
+                    The ecosystem’s first truly free-market program insurance
+                    protocol.
+                  </h1>
                 </div>
-
+                <PrimaryButton>Launch App</PrimaryButton>
+                <div className={styles.socialMediaRow}>
+                  <a href="https://twitter.com/SureProtocol">
+                    <div>
+                      <Image
+                        src={TwitterWhite}
+                        alt="Twitter Logo"
+                        width={45}
+                        height={45}
+                      />
+                    </div>
+                  </a>
+                  <a href="https://discord.gg/GRaHtPufqn">
+                    <div>
+                      <Image
+                        src={DiscordWhite}
+                        alt="Discord Logo"
+                        width={45}
+                        height={45}
+                      />
+                    </div>
+                  </a>
+                  <a href="https://github.com/Sure-Protocol">
+                    <div>
+                      <Image
+                        src={GithubWhite}
+                        alt="Github Logo"
+                        width={45}
+                        height={45}
+                      />
+                    </div>
+                  </a>
+                </div>
                 <div
                   className={css`
                     max-width: 100rem;
                     text-align: center;
                   `}
                 >
-                  <p className={styles.description}>
-                    SURE will make using blockchain technology safer. This is
-                    achieved by creating a marketplace for smart contract
-                    insurance.
-                  </p>
-                  <p className={styles.description}>
-                    Users gets the lowest premiums possible while liquidity
-                    providers receive a higher return for the risk taken.
-                  </p>
+                  <div className={styles.typewriting}>
+                    <p className={`font-light ${styles.description}`}>
+                      Inspire confidence and trust by betting on protocols that{" "}
+                      <span className={"font-bold font-underline"}>
+                        you believe in.
+                      </span>
+                    </p>
+                  </div>
                 </div>
-                <h2 className="h2-gradient">
-                  Anybody can take part in governance.
-                </h2>
               </div>
             </div>
             <div className={styles.container}>

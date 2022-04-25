@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { PopupContext } from "../context/popup";
+import { PopupContext } from "../../context/popup";
 import styles from "../styles/Header.module.scss";
 import Image from "next/image";
 import { css } from "@emotion/css";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Popup from "./_popup";
+import Popup from "../_popup";
 
 import sureLogo from "../public/sure.svg";
 

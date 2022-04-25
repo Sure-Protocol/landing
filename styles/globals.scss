@@ -15,6 +15,12 @@
   src: url('/Trispace-Regular.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: 'Trispace-light';
+  src: url('/Trispace-Light.ttf') format("truetype");
+}
+
+
 html{
   background-color: $two-darkblue;
 }
@@ -36,22 +42,30 @@ a {
   box-sizing: border-box;
 }
 
+
+//############## Text Styling ###################//
 h1 {
   font-family: 'Trispace-medium';
-  background:linear-gradient(90deg, $two-red, $two-purple, $two-red);
-  background-clip: text;
+  color: $basic-font;
   font-size: 48px;
-  text-align: center;
+  text-align: left;
   line-height: 64px;
   margin:0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 
   @media (max-width: $layout-breakpoint-small){
     font-size: 32px;
     line-height: 40px;
     text-align: left;
   }
+
+}
+
+.h1-gradient{
+  background:linear-gradient(90deg, $two-red, $two-purple, $two-red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -93,39 +107,35 @@ p,a,li{
     line-height: 32px;
     text-align: left;
   }
-
-  
 }
+
 
 .small{
     font-size: 18px;
 }
 
-
-
 .isActive{
   color: $primary-green;
 }
 
-.primary-button{
-  padding:10px;
-  background-image: linear-gradient(to right, $two-blue 0%, $two-red  51%, $two-blue  100%);
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
- 
-  transition: 0.5s;
-  background-size: 200% auto;
-  font-family: 'Trispace-medium';
-  color: $basic-font;            
-  border-radius: 10px;
-  border-width: 0px;
-  border-color:#fff;
-  display: block;
-  &:hover{
-    background-position: right center; /* change the direction of the change here */
-     color: #fff;
-     text-decoration: none;
-     cursor: pointer;
-  }
+.font-underline{
+  text-decoration: underline;
 }
+.font-light{
+  font-family: 'Trispace-light';
+}
+
+.font-bold{
+  font-weight: bold;
+}
+//####################################################//
+
+
+//################### IMAGE Styling ################//
+.icon-vertical-margin-xl{
+  margin-top:2rem;
+  margin-bottom:4rem;
+}
+
+//####################################################//
+
