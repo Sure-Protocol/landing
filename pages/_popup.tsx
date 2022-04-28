@@ -1,13 +1,15 @@
+import React from "react";
 import { useContext } from "react";
 import styles from "../styles/Popup.module.scss";
 import { PopupContext } from "../context/popup";
 
-type PopupProps = {
+interface PopupProps {
   title: String;
-  description: String;
-};
+  children?: React.ReactNode;
+}
 
-const Popup: React.FC<PopupProps> = ({ title, children }) => {
+const Popup: React.FC<PopupProps> = (props) => {
+  const { title, children } = props;
   const popup = useContext(PopupContext);
   if (!popup.isOpen) {
     return null;

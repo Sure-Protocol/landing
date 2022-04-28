@@ -51,10 +51,7 @@ const Home: NextPage = () => {
                   <PrimaryButton onClick={() => toggle(!isOpen)}>
                     Launch App
                   </PrimaryButton>
-                  <Popup
-                    title={"Hodl on."}
-                    description={"We're building it. It's going to be awesome"}
-                  >
+                  <Popup title={"Hodl on."}>
                     <p className="small p-margin-s">
                       We are hard at work building V1
                     </p>
