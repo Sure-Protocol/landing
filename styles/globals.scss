@@ -87,6 +87,14 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.h2-margin-s{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.p-margin-s{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
 
 
 
@@ -109,9 +117,17 @@ p,a,li{
   }
 }
 
+a{
+  color: $two-purple;
+  &:hover{
+    background: $primary-purple;
+  }
+}
+
 
 .small{
     font-size: 18px;
+    line-height: 24px;
 }
 
 .isActive{

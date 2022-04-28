@@ -2,7 +2,12 @@ import { useContext } from "react";
 import styles from "../styles/Popup.module.scss";
 import { PopupContext } from "../context/popup";
 
-const Popup = () => {
+type PopupProps = {
+  title: String;
+  description: String;
+};
+
+const Popup: React.FC<PopupProps> = ({ title, children }) => {
   const popup = useContext(PopupContext);
   if (!popup.isOpen) {
     return null;
@@ -10,7 +15,8 @@ const Popup = () => {
   return (
     <div className={styles.popup}>
       <div className={styles.popupContent}>
-        <p className="small">hodl on, we are currently building it</p>
+        <h2 className="h2-margin-s">{title}</h2>
+        {children}
       </div>
     </div>
   );

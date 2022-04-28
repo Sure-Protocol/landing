@@ -10,6 +10,7 @@ import DiscordWhite from "../public/DiscordWhite.svg";
 import GithubWhite from "../public/GithubWhite.svg";
 
 import { PopupContext } from "../context/popup";
+import Popup from "./_popup";
 import PrimaryButton from "./buttons/_PrimaryButton";
 
 import { css } from "@emotion/css";
@@ -46,7 +47,28 @@ const Home: NextPage = () => {
                     protocol.
                   </h1>
                 </div>
-                <PrimaryButton>Launch App</PrimaryButton>
+                <div>
+                  <PrimaryButton onClick={() => toggle(!isOpen)}>
+                    Launch App
+                  </PrimaryButton>
+                  <Popup
+                    title={"Hodl on."}
+                    description={"We're building it. It's going to be awesome"}
+                  >
+                    <p className="small p-margin-s">
+                      We are hard at work building V1
+                    </p>
+                    <p className="small p-margin-s">
+                      While you wait, check out{" "}
+                      <a href="https://github.com/Sure-Protocol/sure-v1/projects/1">
+                        Github
+                      </a>{" "}
+                      or <a href="https://discord.gg/GRaHtPufqn">Discord</a> and
+                      get an idea of how far we have come.
+                    </p>
+                  </Popup>
+                </div>
+
                 <div className={styles.socialMediaRow}>
                   <a href="https://twitter.com/SureProtocol">
                     <div>

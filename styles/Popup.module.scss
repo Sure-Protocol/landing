@@ -1,16 +1,22 @@
 @import 'base.scss';
 .popup{
     position: absolute;
-    right: 5%;
-    top: 10%;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
     border: aliceblue;
     border-style: solid;
     border-width: 3px;
     border-image-slice: 1;
+    background:linear-gradient(70deg, $two-darkblue,90%,$two-purple);
     border-image-source: linear-gradient(45deg,$two-purple,30%,$two-darkblue);
-    max-width: 18rem;
+    width: 50%;
     animation-duration: 0.5s;
     animation-name: slidein;
+
+    @media (max-width:$layout-breakpoint-small) {
+        width: 90%;
+    }
 }
 
 @keyframes slidein {
@@ -25,4 +31,6 @@
 
 .popupContent{
     padding:10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
