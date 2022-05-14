@@ -42,7 +42,7 @@ const Footer = () => {
             <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
-                href="https://discord.com/invite/7nGXeXUe"
+                href="https://discord.gg/nZrF2jhhnM"
               >
                 <div className={styles.footerItemImage}>
                   <Image
