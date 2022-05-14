@@ -60,7 +60,7 @@ const Home: NextPage = () => {
                       <a href="https://github.com/Sure-Protocol/sure-v1/projects/1">
                         Github
                       </a>{" "}
-                      or <a href="https://discord.gg/GRaHtPufqn">Discord</a> and
+                      or <a href="https://discord.gg/nZrF2jhhnM">Discord</a> and
                       get an idea of how far we have come.
                     </p>
                   </Popup>
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                       />
                     </div>
                   </a>
-                  <a href="https://discord.gg/GRaHtPufqn">
+                  <a href="https://discord.gg/nZrF2jhhnM">
                     <div>
                       <Image
                         src={DiscordWhite}
