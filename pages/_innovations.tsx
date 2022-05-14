@@ -11,9 +11,10 @@ const Innovation = () => {
         <div className={styles.description}>
           <h2 className="h2-gradient ">Concentrated Liquidity</h2>
           <p className="small">
-            By allowing Liquidity Providers to concentrate liquidity in premium
-            ranges SURE effectively creates a marketplace for insurance. Users
-            are therefore guaranteed the lowest premium possible.
+            By allowing Liquidity Providers(LPs) to concentrate liquidity in premium
+            ranges, Sure ensures that protocols are insured at true market cost. Sure relies
+            on its LPs to submit bids on risk, with the policy holders always guaranteed the lowest
+            premium rates possible.
           </p>
         </div>
         <div className={styles.img}>
@@ -29,10 +30,9 @@ const Innovation = () => {
         <div className={styles.description}>
           <h2 className="h2-gradient ">Claim Voting</h2>
           <p className="small">
-            Holders of $veSure have the privileged to vote on Proof of Claim in
-            order to agree on the size of the claim. Through blind vote a vote
-            distribution is created where the mean is considered the consensus.
-            The closer the consensus you vote the greater reward you receive.
+            Holders of $veSure have the privilege of voting on claims in. Through blind voting,
+            vote distribution is established with consensus existing at mean.
+            The closer to consensus that a vote is, the greater the reward the voter receives.
           </p>
         </div>
         <div className={styles.img}>
@@ -43,14 +43,14 @@ const Innovation = () => {
         <div className={styles.description}>
           <h2 className="h2-gradient ">Protocol Owned Liquidity</h2>
           <p className="small">
-            By offering Liquidity Providers the best price denominated in $sure
-            for their position SURE is able to own much of the liquidity. This
-            is a win-win situation for all parties. By owning liquidity over
-            many pools SURE has effectively diversified risk, acquired a revenue
-            stream and increased the capital flexibility in case of a black swan
-            type breach. By selling the position, the Liquidity Provider is
-            entitled to rewards across all pools thus increasing the reward/risk
-            ratio.
+            Over time, Sure will collect fees on premium payments that will be reallocated to pools; stabilizing liquidity and
+            accruing value to holders of Sure&apos;s governance tokens.
+            This is a win-win situation for all parties. By owning liquidity over
+            many pools Sure will have diversified risk, acquired a revenue
+            stream and increased capital flexibility in the event of a black swan
+            type breach. Stabilizing pools will also serve to reduce their perceived risk-reward,
+            lowering effective premium rates for protocols and improving perceived security of pools, as
+            established by LPs.
           </p>
         </div>
         <div className={styles.img}>
