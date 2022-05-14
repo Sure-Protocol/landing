@@ -118,7 +118,7 @@ const Home: NextPage = () => {
             <div className={styles.container}>
               <div className={styles.statement}>
                 <div>
-                  <h1>Rethink Insurance</h1>
+                  <h1>Rethinking Insurance.</h1>
                 </div>
 
                 <div
@@ -127,12 +127,12 @@ const Home: NextPage = () => {
                     text-align: center;
                   `}
                 >
-                  <p>We understand that bugs can sneak in</p>
+                  <p>We understand that when moving fast, things break and bugs creep in</p>
                   <p>
-                    SURE wants to create a virtuous circle of incentivizing
-                    liquidity providers to reduce the risk of the insured
-                    protocols. Since premiums are commoditized, LPs can increase
-                    their reward risk ratio by securing the protcols.
+                    Sure Protocol seeks to create a true incentive-driven approach to
+                    Solana program insurance, by creating a marketplace where liquidity providers
+                    and protocols seeking insurance can trade risk. This allows developers to keep building
+                    and improving their protocols, knowing that their users are protected against the unthinkable.
                   </p>
                 </div>
               </div>
@@ -150,9 +150,9 @@ const Home: NextPage = () => {
                   `}
                 >
                   <p>
-                    Sure is not like any other protocol. We use the full range
-                    of DeFi innovations mixed with insurance best practises to
-                    create a marketplace that benfits every user.
+                    Sure leverages the full range
+                    of DeFi innovations, in conjunction with the best practices of the insurance industry, to
+                    create a fair and equitable market for all. Sure Protocol exists in a class of its own!
                   </p>
                 </div>
               </div>
