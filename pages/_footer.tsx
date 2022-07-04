@@ -79,7 +79,7 @@ const Footer = () => {
             <li className={styles.footerGroupItemListItem}>
               <a
                 className={styles.footerItemTag}
-                href="https://sure-claims.slite.com/p/note/S5iFtyghDI-HohuJVMTXBS"
+                href="https://sure-protocol.gitbook.io/white-paper/"
               >
                 White Paper
               </a>
