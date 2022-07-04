@@ -17,4 +17,4 @@ Make sure you have
 
 installed.
 
-## Issues
+## Issue
